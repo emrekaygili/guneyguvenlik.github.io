@@ -1,0 +1,728 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+      font-family: "Nunito", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 300;
+      font-style: normal;
+      margin: 0;
+  }
+
+#menu{
+      height: 80px;
+      padding: 0 20px;
+}
+
+#logo{
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 80px;
+  color: #003666;
+  float: left;
+}
+
+nav{
+  float: right;
+  line-height: 80px;
+}
+
+nav a:link{
+  text-decoration: none;
+  margin-right: 25px;
+  color: #003666;
+}
+
+nav a:hover{
+  border-bottom: 2px solid #003666;;
+}
+
+nav a:visited{
+  text-decoration: none;
+  margin-right: 25px;
+  color: #003666;
+}
+
+.ikon{
+  margin-right: 7px;
+  font-size: 16px;
+}
+
+
+
+#anasayfa{
+  height: 600px;
+  width: 1515px;
+  background-image:url(img/resim1.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;    
+}
+
+
+#içerik {
+  position: absolute;
+  transform: translate(-50% , -50%);
+  top:50%;
+  left: 40%;
+  color: white;
+  font-size: 20px;
+}
+
+
+#black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);  /* Arka plan karartma efekti */
+  z-index: 1;
+} 
+
+
+#hakkimizda{
+  background-color: #f8f9fa;
+  padding: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  margin: auto;
+  background-color: #F0EBE3;
+}
+
+.project-item {
+  text-align: center;
+  width: 100%;
+}
+
+.project-item img {
+  width: 100%;
+  max-width: 400px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#projectsrenk{
+  background-color: #F0EBE3;
+  width: 1515px;
+}
+
+#h5urun{
+  margin: 80px;
+}
+
+h3{
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 55px;
+  color: #003666;
+  text-shadow:0px 1px 1px black ;
+  font-weight: 600;
+}
+
+#spyhak{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+#alarmhak{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+
+#kamerahak{
+  margin: 0;
+  width: 100%;
+  height: auto;
+}
+/*bu kısım hakkımızda kısmı için yapılmıştır */
+ul {overflow:hidden;}
+ul {float:left; margin-right:20px;}
+ul img {border:2px solid #000;}
+
+#pson{
+  color: #999999;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.8;
+  margin-top: 30px;
+  font-weight: 100;
+}
+
+.containerürün{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+
+.containeranasayfa{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+
+}
+
+.containerhakkımızda{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+
+}
+
+.containeriletisim{
+  width: 1200px;
+  height: auto;
+  margin: auto;
+}
+
+#sol{
+  float: left;
+  border-right: 3px solid #445c6e;
+  font-size: 30px;
+  width: 400px;
+  color: #445c6e;
+}
+
+#h5sol{
+  line-height: 1.6;
+  font-size: 33px;
+  font-weight: 600;
+}
+
+#h5sol , #sag{
+  margin: 05;
+  padding: 05;
+  margin-top: 20px;
+}
+
+span{
+  font-size: 50px;
+  margin-right: 7px;
+  line-height: 42px; 
+  color: #003666;
+  font-weight: 600;
+  float: left;
+}
+
+#sag{
+  float: right;
+  width: 750px;
+  color: #999999;
+  text-align: left;
+  letter-spacing: 1px;
+  font-size: 15px;
+  line-height: 1.8;
+  font-weight: 100;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+.mt100{
+  margin-top: 100px;
+}
+
+
+#ürünler{
+  background-color: #F0EBE3;
+  padding: 50px;
+  width: 1515px;
+  text-align: center;
+  height: 850px;
+}
+
+.card{
+  width: 320px;
+  height: 350px;
+  border: 2px solid #ddd;
+  padding: 0;
+  display: inline-block;
+}
+
+.baslikcardsec{
+  font-size: 15px;
+  margin: 20px;
+  position:relative;
+  color: #003666;
+}
+.baslikcardspy{
+  font-size: 15px;
+  margin: 20px;
+  position:relative;
+  color: #003666;
+}
+
+.baslikcarddahua{
+  font-size: 15px;
+  margin: -20px;
+  position:relative;
+  color: #003666;
+}
+.baslikcardhik{
+  font-size: 15px;
+  margin: -20px;
+  position:relative;
+  color: #003666;
+}
+
+.cardp{
+  color: #888;
+}
+
+.card:hover{
+  border: 2px solid gray;
+}
+
+#referanslar{
+  background-color: #F0EBE3; 
+  padding: 40px;
+  width: 1515px;
+  height: 850px;
+  font-size: large;
+  /*background-image:url(img/ggs1.jpg); gösterilecek kısım */
+  /*text-align: center; zaten kapattım */
+}
+
+#referansh3{
+  color: black;
+  text-align: center;
+}
+
+#referansh4{
+  font: size 10px;;
+}
+
+.renkreferans{
+  color: black;
+}
+
+.sutun-sol-sag{
+  width: 385px;
+  float: left;
+  padding: 50px;
+}
+
+.oval{
+  border-radius: 50%;
+}
+
+.ekipisim{
+  color: white;
+  font-size: 25px;
+  margin-bottom: 12px;
+}
+
+.ekipp{
+  color: #888;
+  font-size: 18px;
+}
+
+.social{
+  color: white;
+  border: 1px solid white;
+  padding: 10px;
+  width: 50px;
+  border-radius: 5px;
+  margin: 5px 5px;
+}
+
+.social:hover{
+  background-color: #888 ;
+}
+
+#iletisim{
+  background:url("img/iletisim.jpg");
+  background-size: cover;
+  padding: 50px;
+  width: 1515px;
+  height: auto;
+  text-align: center;
+}
+
+
+#h3iletisim{
+  color: white;
+}
+
+#iletisimopak{
+  background: rgba(255, 255, 255, 0.2);
+  padding: 30px 20px;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  height: 550px;
+}
+
+#formgroup{
+  width: 700px;
+  float: left;
+  height: 500px;
+  text-align: left;
+}
+
+#solform{
+  width: 50%;
+  float: left;
+  padding-right: 5px;
+}
+
+#sagform{
+  width: 50%;
+  float: right;
+  padding-left:  5px; ;
+}
+
+.form-control{
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #495057;
+  background-color: white;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ced4da;
+}
+
+textarea{
+  font-family: Arial;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+  background-color: #445c6e;
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+
+}
+
+#adres{
+  width: 450px;
+  float: right;
+  padding: 30px;
+  height: 500px;
+  text-align: left;
+}
+
+#adresbaslik{
+  font-size: 30px;
+  color: #fff;
+}
+
+.adresp{
+  color:#f8f9fa;
+  font-size: 15px;
+  letter-spacing: 1.5px;
+}
+
+#copyright{
+  color: white;
+  font-size: 20px;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+#up{
+  color: white;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 15px;
+  padding: 9px 12px;
+  margin-top: 20px;
+}
+
+.incelebutondahua{
+  color:#8B93FF;
+  text-align: justify;
+  border-radius: 10;
+  padding: 10px 12px;
+  margin-bottom: 30px;
+  border:1px solid black; margin: 70px; width:100px
+}
+.incelebutonspy{
+  color:#8B93FF;
+  text-align: justify;
+  border-radius: 10;
+  padding: 10px 12px;
+  margin-bottom: 30px;
+  border:1px solid black; margin: 30px; width:100px
+}
+.incelebutonsec{
+  color:#8B93FF;
+  text-align: justify;
+  border-radius: 10;
+  padding: 10px 12px;
+  margin-bottom: 30px;
+  border:1px solid black; margin: 30px; width:100px
+}
+.incelebutonhk{
+  color:#8B93FF;
+  text-align: justify;
+  border-radius: 10;
+  padding: 10px 12px;
+  margin-bottom: 30px;
+  border:1px solid black; margin: 70px; width:100px
+}
+
+/* Hakkımızda bölümü için düzenlemeler */
+#projectsrenk {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-item {
+  text-align: center;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Ürünler bölümü için düzenlemeler */
+#ürünler {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.containerürün {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 20px;
+}
+
+/* İletişim bölümü için düzenlemeler */
+#iletisim {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+.containeriletisim {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#iletisimopak {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#formgroup {
+  width: 100%;
+  float: none;
+  height: auto;
+}
+
+#solform, #sagform {
+  width: 100%;
+  float: none;
+  padding: 0;
+}
+
+#adres {
+  width: 100%;
+  float: none;
+  padding: 30px 0;
+  height: auto;
+}
+
+/* Responsive tasarım için medya sorguları */
+@media (max-width: 768px) {
+  #menu, #anasayfa, #projectsrenk, #ürünler, #referanslar, #iletisim {
+      width: 100%;
+  }
+
+  .projects {
+      grid-template-columns: 1fr;
+  }
+
+  #formgroup, #adres {
+      width: 100%;
+      float: none;
+  }
+
+  #solform, #sagform {
+      width: 100%;
+      float: none;
+      padding: 0;
+  }
+
+  .form-control {
+      margin: 10px 0;
+  }
+
+  input[type="submit"] {
+      width: 100%;
+      margin: 10px 0;
+  }
+}
+
+/* Mobil menü butonu */
+.menu-btn {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+}
+
+/* Responsive tasarım için medya sorguları */
+@media screen and (max-width: 768px) {
+    #menu {
+        position: relative;
+    }
+    
+    .menu-btn {
+        display: block;
+    }
+    
+    nav {
+        display: none;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: white;
+        padding: 20px 0;
+        text-align: center;
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav a {
+        display: block;
+        margin: 10px 0;
+    }
+    
+    #logo {
+        font-size: 24px;
+    }
+    
+    #içerik {
+        left: 50%;
+        width: 90%;
+        padding: 20px;
+    }
+    
+    .projects {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+    
+    .project-item img {
+        width: 100%;
+        height: auto;
+    }
+    
+    #formgroup {
+        width: 100%;
+        padding: 0 20px;
+    }
+    
+    #solform, #sagform {
+        width: 100%;
+        float: none;
+        padding: 0;
+    }
+    
+    #adres {
+        width: 100%;
+        float: none;
+        padding: 20px;
+    }
+    
+    .card {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+
+/* Tablet boyutu için düzenlemeler */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .projects {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    #içerik {
+        width: 70%;
+    }
+    
+    .containerürün {
+        width: 90%;
+    }
+}
+
+/* Mobil uyumluluk için medya sorgusu */
+@media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+        padding: 10px;
+    }
+    
+    .project-item img {
+        height: 120px;
+        max-width: 100%;
+    }
+    
+    .project-item ul {
+        font-size: 12px;
+        margin: 5px 0;
+    }
+}
+
+/* Çok küçük ekranlar için ek düzenleme */
+@media screen and (max-width: 480px) {
+    .project-item img {
+        height: 100px;
+    }
+}
+
+/* Tablet boyutu için düzenleme */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .project-item img {
+        height: 200px;
+    }
+}
