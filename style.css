@@ -51,35 +51,50 @@ nav a:visited{
 
 
 
-#anasayfa{
-  height: 600px;
-  width: 1515px;
-  background-image:url(img/resim1.webp);
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;    
+#anasayfa {
+    height: 600px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+
+#arkaplanVideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    object-fit: cover;
 }
 
 
 #içerik {
-  position: absolute;
-  transform: translate(-50% , -50%);
-  top:50%;
-  left: 40%;
-  color: white;
-  font-size: 20px;
+    position: absolute; /* Değişiklik: relative yerine absolute */
+    z-index: 2;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%; /* Değişiklik: left değerini 50% yaparak ortalıyoruz */
+    color: white;
+    font-size: 20px;
+    text-align: center; /* Değişiklik: metni ortalamak için */
+    padding: 20px; /* Değişiklik: içeriğin etrafında biraz boşluk bırakmak için */
+    width: 90%; /* Değişiklik: genişliği %90 yaparak ekranın içinde kalmasını sağlıyoruz */
+    box-sizing: border-box; /* Değişiklik: padding'in genişlik hesaplamasına dahil edilmesi için */
 }
 
-
 #black {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);  /* Arka plan karartma efekti */
-  z-index: 1;
-} 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
 
 
 #hakkimizda{
