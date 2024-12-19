@@ -2,6 +2,14 @@
   box-sizing: border-box;
 }
 
+[href*='wa.me'] {
+  transition: transform 0.3s ease;
+}
+
+[href*='wa.me']:hover {
+  transform: scale(1.1);
+}
+
 body {
       font-family: "Nunito", sans-serif;
       font-optical-sizing: auto;
