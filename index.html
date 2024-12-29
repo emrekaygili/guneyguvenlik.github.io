@@ -13,13 +13,14 @@
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body>
     <section id="menu">
         <div id="logo" class="animate__animated animate__backInUp">Güney Güvenlik Sistemleri</div>
-        <div id="menuBtn" class="menu-btn">
+        <div class="menu-btn">
             <i class="fas fa-bars"></i>
-        </div>
+        </div> 
         <nav class="animate__animated animate__backInUp">
             <a href="#anasayfa"><i class="fas fa-home icon"></i>Anasayfa</a>
             <a href="#projectsrenk"><i class="fas fa-info ikon"></i>Hakkımızda</a>
@@ -129,7 +130,7 @@
     <!--WHATSAP BUTON KODLARI-->
 
     <div style="position: fixed; bottom: 20px; right: 20px; z-index: 99;">
-        <a href="https://wa.me/90532*******?text=Merhaba,%20bilgi%20almak%20istiyorum"
+        <a href="https://wa.me/905326480932?text=Merhaba,%20bilgi%20almak%20istiyorum"
            target="_blank"
            style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background-color: #25D366; color: white; text-decoration: none; border-radius: 50%; box-shadow: 2px 2px 6px rgba(0,0,0,0.4);">
             <i class="fab fa-whatsapp" style="font-size: 35px;"></i>
@@ -137,8 +138,6 @@
     </div>
 
     <!--WHATSAP BUTON KODLARI-->
-
-
     <section id="iletisim">
         <div class="containeriletisim">
             <h3 id="h3iletisim" class="animate__animated animate__fadeInLeftBig">İletişim</h3>
@@ -172,8 +171,8 @@
             <footer>
                 <div id="copyright">2025 | Tüm Hakları Saklıdır</div>
                 <div id="socialfooter">
-                    <a href="https://www.linkedin.com/in/emrekaygili/"><i class="fab fa-github social"></i></a>
-                    <a href="https://www.linkedin.com/in/emrekaygili/"><i class="fab fa-twitter social"></i></a>
+                    <a href="https://github.com/emrekaygili"><i class="fab fa-github social"></i></a>
+                    <a href="https://x.com/emrekaygili/"><i class="fab fa-twitter social"></i></a>
                     <a href="https://www.linkedin.com/in/emrekaygili/"><i class="fab fa-linkedin social"></i></a>
                 </div>
                 <a href="#menu">
@@ -210,22 +209,9 @@
     crossorigin="anonymous"></script> 
 <script src="owl/owl.carousel.min.js"></script>
 <script src="owl/script.js"></script>
-<script>
-    // Mobil menü fonksiyonları
-    const menuBtn = document.querySelector('.menu-btn');
-    const nav = document.querySelector('nav');
-    
-    menuBtn.addEventListener('click', () => {
-        nav.classList.toggle('active');
-    });
-    
-    // Menü linklerine tıklandığında menüyü kapat
-    document.querySelectorAll('nav a').forEach(link => {
-        link.addEventListener('click', () => {
-            nav.classList.remove('active');
-        });
-    });
-</script>
+
+
+
 </body>
 </html>
 
