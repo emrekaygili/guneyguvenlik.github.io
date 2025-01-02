@@ -24,7 +24,7 @@ body {
 }
 
 #logo{
-  font-size: 30px;
+  font-size: 35px;
   font-weight: bold;
   line-height: 80px;
   color: #003666;
@@ -673,8 +673,12 @@ input[type="submit"] {
     }
 
     #logo {
-        width: 70%;
-        font-size: 24px;
+        width: auto;
+        font-size: 23px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding-right: 50px;
     }
     
     #içerik {
