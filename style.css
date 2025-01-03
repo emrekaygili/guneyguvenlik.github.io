@@ -1,5 +1,157 @@
-*{
+/* Temel değişkenler ve tema ayarları */
+:root {
+  --bg-color: #fff;
+  --text-color: #003666;
+  --nav-bg: #fff;
+  --card-bg: #fff;
+  --section-bg: #F0EBE3;
+  --footer-text: #999999;
+  --border-color: #ddd;
+  --logo-color: #003666;
+  --hover-border-color: #003666;
+  --h3-color: #003666;
+  --navbar-bg: #fff;
+  --navbar-text: #003666;
+  --navbar-logo: #003666;
+  --navbar-hover: #003666;
+}
+
+/* Temel sayfa yapısı */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+/* Global box-sizing ayarı */
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+/* Ana bölümlerin genişlik ayarları */
+#projectsrenk, #ürünler, #referanslar, #iletisim {
+  width: 100% !important;
+  max-width: 100% !important;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/* Yatay mod için özel ayarlar */
+@media screen and (orientation: landscape) {
+  body {
+    width: 100vw;
+    overflow-x: hidden;
+  }
+  
+  #menu, #anasayfa, #projectsrenk, #ürünler, #referanslar, #iletisim {
+    width: 100vw !important;
+    max-width: 100vw !important;
+  }
+  
+  .containerürün, .containeriletisim {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  #arkaplanVideo {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+  }
+}
+
+/* Karanlık mod ayarları */
+body.dark-mode {
+  --bg-color: #1a1a1a;
+  --text-color: #fff;
+  --nav-bg: #2d2d2d;
+  --card-bg: #2d2d2d;
+  --section-bg: #2d2d2d;
+  --footer-text: #fff;
+  --border-color: #444;
+  --logo-color: #fff;
+  --hover-border-color: #fff;
+  --h3-color: #fff;
+}
+
+/* Karanlık mod menü ayarları */
+body.dark-mode #menu {
+  background-color: #1a1a1a;
+}
+
+body.dark-mode #logo {
+  color: #fff;
+}
+
+body.dark-mode nav a:link,
+body.dark-mode nav a:visited {
+  color: #fff;
+}
+
+body.dark-mode nav a:hover {
+  border-bottom: 2px solid #fff;
+}
+
+body.dark-mode .menu-btn {
+  color: #fff;
+}
+
+body.dark-mode #dark-mode-toggle {
+  color: #fff;
+}
+
+/* Genel stil ayarları */
+h3 {
+  color: var(--h3-color);
+  transition: all 0.3s ease;
+}
+
+#h5urun {
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.baslikcardsec, .baslikcardspy, .baslikcarddahua, .baslikcardhik {
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.renkreferans {
+  color: var(--text-color);
+  transition: all 0.3s ease;
+}
+
+.card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+  transition: all 0.3s ease;
+}
+
+#dark-mode-toggle {
+  position: relative;
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+  color: var(--text-color);
+  z-index: 1002;
+}
+
+#dark-mode-toggle i {
+  font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+#dark-mode-toggle:hover i {
+  transform: scale(1.2);
 }
 
 [href*='wa.me'] {
@@ -11,16 +163,16 @@
 }
 
 body {
-      font-family: "Nunito", sans-serif;
-      font-optical-sizing: auto;
-      font-weight: 300;
-      font-style: normal;
-      margin: 0;
-  }
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  margin: 0;
+}
 
 #menu{
-      height: 80px;
-      padding: 0 20px;
+  height: 80px;
+  padding: 0 20px;
 }
 
 #logo{
@@ -29,6 +181,12 @@ body {
   line-height: 80px;
   color: #003666;
   float: left;
+  color: var(--logo-color);
+  transition: all 0.3s ease;
+}
+
+body.dark-mode #logo {
+  color: #fff; /* Karanlık modda beyaz renk */
 }
 
 nav{
@@ -111,6 +269,15 @@ nav a:visited{
   text-align: center;
   text-transform: capitalize;
   font-weight: 600;
+}
+
+#h5urun {
+  color: #003666; /* Varsayılan renk */
+}
+
+/* Değişiklik: Karanlık modda yazı rengini siyah yapıyoruz */
+body.dark-mode #h5urun {
+  color: #000; /* Karanlık modda siyah renk */
 }
 
 
@@ -766,4 +933,56 @@ input[type="submit"] {
     .project-item img {
         height: 200px;
     }
+}
+
+/* Mobil görünüm için düzenlemeler */
+@media screen and (max-width: 768px) {
+    #dark-mode-toggle {
+        position: absolute;
+        top: 50%;
+        right: 60px;
+        transform: translateY(-50%);
+        line-height: normal;
+        margin-right: 0;
+    }
+
+    .menu-btn {
+        margin-right: 10px;
+    }
+
+    nav.active {
+        background-color: var(--nav-bg);
+    }
+}
+
+/* Navbar karanlık mod stilleri */
+body.dark-mode #menu {
+    background-color: #1a1a1a;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode #logo {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode nav a:link,
+body.dark-mode nav a:visited {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode nav a:hover {
+    border-bottom: 2px solid #fff;
+    transition: border-color 0.3s ease;
+}
+
+body.dark-mode .menu-btn {
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+body.dark-mode #dark-mode-toggle {
+    color: #fff;
+    transition: color 0.3s ease;
 }
