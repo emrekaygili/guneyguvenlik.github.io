@@ -92,3 +92,19 @@ document.addEventListener('DOMContentLoaded', function() {
     darkModeManager.init();
     mobileMenuManager.init();
 }); 
+
+
+                // Scroll to top butonu için
+                window.onscroll = function() {
+                    scrollFunction();
+                };
+        
+                function scrollFunction() {
+                    var scrollTopBtn = document.querySelector(".scroll-top");
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollTopBtn.style.display = "flex";
+                    } else {
+                        scrollTopBtn.style.display = "none";
+                    }
+                }
+            
