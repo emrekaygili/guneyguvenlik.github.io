@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="owl/owl.carousel.min.css">
     <link rel="stylesheet" href="owl/owl.theme.default.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">   
 
 </head>
 <body>
@@ -132,13 +132,12 @@
             </ul>
     </section>
 
-    <!--WHATSAP BUTON KODLARI-->
-
-    <div style="position: fixed; bottom: 20px; right: 20px; z-index: 99;">
+      <!--WHATSAP BUTON KODLARI-->
+      <div class="whatsapp-button">
         <a href="https://wa.me/905326480932?text=Merhaba,%20bilgi%20almak%20istiyorum"
-           target="_blank"
-           style="display: flex; align-items: center; justify-content: center; width: 60px; height: 60px; background-color: #25D366; color: white; text-decoration: none; border-radius: 50%; box-shadow: 2px 2px 6px rgba(0,0,0,0.4);">
-            <i class="fab fa-whatsapp" style="font-size: 35px;"></i>
+           target="_blank">
+            <i class="fab fa-whatsapp"></i>
+            <span class="whatsapp-text">Bize Ulaşın</span>
         </a>
     </div>
 
@@ -176,17 +175,64 @@
             <footer>
                 <div id="copyright">2025 | Tüm Hakları Saklıdır</div>
                 <div id="socialfooter">
-                    <a href="https://github.com/emrekaygili"><i class="fab fa-github social"></i></a>
-                    <a href="https://x.com/emrekaygili/"><i class="fab fa-twitter social"></i></a>
-                    <a href="https://www.linkedin.com/in/emrekaygili/"><i class="fab fa-linkedin social"></i></a>
+                    <a href="https://www.instagram.com/" target="_blank" class="social-link"><img width="48" height="48" src="https://img.icons8.com/fluency/48/instagram-new.png" alt="instagram-new"/></a>
+                    <a href="https://x.com/emrekaygili/" target="_blank" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/in/emrekaygili/" target="_blank" class="social-link"><i class="fab fa-linkedin"></i></a>
                 </div>
-                <a href="#menu">
-                    <i class="fas fa-angle-up" id="up"></i>
+                <a href="#menu" class="scroll-top">
+                    <i class="fas fa-angle-up"></i>
                 </a>
             </footer>
+            
+            <!-- Yukarı Çık Butonu -->
+            <button onclick="topFunction()" id="scrollTopBtn" class="scroll-top" title="Yukarı Git">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+
+            <script>
+                // Yumuşak geçiş için tüm navbar linklerini seç
+                document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
+                    anchor.addEventListener('click', function (e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetElement = document.querySelector(targetId);
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth',
+                                block: 'start'
+                            });
+                        }
+                    });
+                });
+            
+                // Yukarı çık butonu
+                var scrollButton = document.getElementById("scrollTopBtn");
+            
+                // Sayfa kaydırıldığında butonu göster/gizle
+                window.onscroll = function() {
+                    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                        scrollButton.style.opacity = "1";
+                        scrollButton.style.visibility = "visible";
+                    } else {
+                        scrollButton.style.opacity = "0";
+                        scrollButton.style.visibility = "hidden";
+                    }
+                };
+            
+                // Yukarı kaydırma fonksiyonu
+                function topFunction() {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                }
+            </script>
+
         </div>
     </section>
 
+    
     <script src="wow.min.js"></script>
     <script>
         new WOW().init();
